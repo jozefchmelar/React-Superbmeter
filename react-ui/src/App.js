@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ahimport React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Row, Col, Button, Form, FormGroup, ButtonGroup, Label, Input, FormText, Container, InputGroupText, InputGroup, InputGroupAddon, DropdownMenu, DropdownToggle, DropdownItem, Dropdown } from 'reactstrap';
@@ -111,18 +111,13 @@ class App extends Component {
                 onSelected={this.onToSelected}
               />
             </Col>
-            {/* <Col lg="4" >
-              {this.state.commonDestinations.map((item) => <Button color="link">{item}</Button>)}
-            </Col> */}
           </Row>
-
 
           <FormGroup>
             <Row>
               <InputGroup>
                 <Col lg="6" xs="8">
                   <Input placeholder="0" type="number" value={Math.round(this.state.distance * this.state.distanceMultiply)} />
-
                 </Col>
                 <Col lg="4" xs="1">
                   <ButtonGroup>
@@ -134,9 +129,7 @@ class App extends Component {
               </InputGroup>
             </Row>
           </FormGroup>
-
           <FormGroup>
-
             <InputGroup>
               <Input placeholder="Cena" type="number" value={Math.round(this.state.distance * 0.059 * this.state.distanceMultiply)} />
               <InputGroupAddon addonType="prepend">€</InputGroupAddon>
